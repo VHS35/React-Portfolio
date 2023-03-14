@@ -36,3 +36,12 @@
     transform: rotate(360deg);
   }
 }
+
+.mePhoto {
+  display: block;
+  margin-left: 35%;
+  margin-right: 35%;
+  border-bottom: 5px;
+  border-radius: 20%;
+}
+

@@ -5,7 +5,7 @@ import Project from './components/pages/projects';
 import Contact from './components/pages/contact';
 import Footer from './components/footer';
 import Header from './components/header';
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { useState } from 'react';
 
 export default function App() {
@@ -13,7 +13,7 @@ export default function App() {
 
     // This method is checking to see what the value of `currentPage` is. Depending on the value of currentPage, we return the corresponding component to render.
     const renderPage = () => {
-      if (currentPage === 'Home') {
+      if (currentPage === 'About') {
         return <AboutMe />;
       }
       if (currentPage === 'Projects') {

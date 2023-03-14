@@ -1,22 +1,19 @@
 import React from 'react';
+import Me from '../../assets/myphoto1.jpeg'
 
 export default function AboutMe() {
   return (
-    <div>
-      <h1>About Me</h1>
-      <p>
-        Integer cursus bibendum sem non pretium. Vestibulum in aliquet sem, quis
-        molestie urna. Aliquam semper ultrices varius. Aliquam faucibus sit amet
-        magna a ultrices. Aenean pellentesque placerat lacus imperdiet
-        efficitur. In felis nisl, luctus non ante euismod, tincidunt bibendum
-        mi. In a molestie nisl, eu sodales diam. Nam tincidunt lacus quis magna
-        posuere, eget tristique dui dapibus. Maecenas fermentum elementum
-        faucibus. Quisque nec metus vestibulum, egestas massa eu, sollicitudin
-        ipsum. Nulla facilisi. Sed ut erat ligula. Nam tincidunt nunc in nibh
-        dictum ullamcorper. Class aptent taciti sociosqu ad litora torquent per
-        conubia nostra, per inceptos himenaeos. Etiam ornare rutrum felis at
-        rhoncus. Etiam vel condimentum magna, quis tempor nulla.
-      </p>
-    </div>
-  );
+      <div>
+          <h1>About Me</h1>
+          <img src = {Me} width={175} height={375} alt ="Myphoto" className='mePhoto '></img>
+          
+          <p className=''> Hello my name is Vanessa Mendez and I'm an aspiring Full Stack Developer.
+          Coding is complete career change for me, and I'm excited to practice everything I'm learning in a real world job setting.
+          In my personal life, I have two small children that I love to do activities with such as traveling, arts and crafts, playing
+          video games etc. I am also part of the salsa dancing community locally and help teach kids dance classes.
+         
+         </p>
+        
+      </div>
+  )
 }
