@@ -1,38 +1,44 @@
-import React from 'react';
-
-export default function Form() {
+import React from 'react'
+const ContactForm = () => {
+  const [formStatus, setFormStatus] = React.useState('Send')
+  const onSubmit = (e) => {
+    e.preventDefault()
+    setFormStatus('Submitting...')
+    const { name, email, message } = e.target.elements
+    let conFom = {
+      name: name.value,
+      email: email.value,
+      message: message.value,
+    }
+    console.log(conFom)
+  }
   return (
-    <div className =' text-center'>
-      <p> Contact Me</p>
-      <form className="form">
-      <div className="form-group col-md-9">
-      <label className ='col-md-3 control-label'>Your Email</label>
-        <input
-          // value={email}
-          // name="email"
-          // onChange={handleInputChange}
-          type="email"
-          placeholder="email"
-        />
+    <div className="container mt-5">
+      <h2 className="mb-3">Contact Me</h2>
+      <form onSubmit={onSubmit}>
+        <div className="mb-3">
+          <label className="form-label" htmlFor="name">
+            Name
+          </label>
+          <input className="form-control" type="text" id="name" required />
         </div>
-        <div className="form-group col-md-9">
-        <label className ='col-md-3 control-label'>Your Name</label>
-        <input
-          // value={name}
-          // name="name"
-          // onChange={handleInputChange}
-          type="text"
-          placeholder="name"
-        />
-        <div className="form-group col-md-9">
-      <label className ='col-md-3 control-label'>Message</label>
-      <textarea className="form-control" id="message" name="message" placeholder="Please enter your message here..." rows="5"></textarea>
+        <div className="mb-3">
+          <label className="form-label" htmlFor="email">
+            Email
+          </label>
+          <input className="form-control" type="email" id="email" required />
         </div>
+        <div className="mb-3">
+          <label className="form-label" htmlFor="message">
+            Message
+          </label>
+          <textarea className="form-control" id="message" required rows='5'/>
         </div>
-        <button type="button">Submit</button>
+        <button className="btn btn-dark justify-center" type="submit">
+          {formStatus}
+        </button>
       </form>
-     
-        </div>
-  );
+    </div>
+  )
 }
-
+export default ContactForm

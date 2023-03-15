@@ -8,7 +8,7 @@ SO THAT the employer can assess whether I'm a good candidate for an open positio
 ## Summary
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-Created a personalized Portfolio using React and Bootstrap. Still working on updating as the course progresses. 
+Created a personalized Portfolio using React and Bootstrap. Still working on updating my profile as the course progresses. 
 
 ## Screenshot
 
